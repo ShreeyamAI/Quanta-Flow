@@ -1,91 +1,28 @@
-QuantaFlow - Personal Finance and Budget Tracker
-Creator: Shreeyam Yadav
-Class: 12th Sci Alpha
 
-__Introduction:-
- ------>QuantaFlow is a Python-based personal finance and budget tracker that helps users manage their expenses, visualize spending habits, and perform data 	analysis on their financial records. This project is developed using Python libraries such as pandas, matplotlib, pyfiglet, and termcolor.
+### QuantaFlow
 
-__Features:-
- ----->1.User Registration and Login: Allows users to register with a username and password and log in securely.
- ----->2.Manage Finance: Users can add, view, filter, and delete their expenses.
- ----->3.Data Visualization: Visualize expenses using bar charts, line charts, pie charts, and histograms.
- ----->4.Account Management: Update account passwords.
- ----->5.View Existing Users: List all registered users.
- ----->6.CSV-based Data Storage: Each user has a dedicated CSV file for storing their financial data.
+```markdown
+# QuantaFlow
 
-__Libraries Used:-
- ----->os: For handling file paths and checking if files exist.
- ----->pyfiglet and termcolor: For creating stylized text outputs.
- ----->pandas: For data manipulation and CSV file handling.
- ----->matplotlib: For visualizing data through graphs.
- ----->Project Structure
- ----->Credentials/credentials.txt: Stores user credentials (username and password).
- ----->FinanceFiles/: Directory containing CSV files for each user's financial data.
+A Python command-line personal finance tracker for recording expenses and reviewing spending.
 
-__Modules and Functions:-
+## Features
 
-1.User Registration and Login
- ----->register_user(credentials_file): Registers a new user by adding their username and password to the credentials file.
- ----->login_user(credentials_file): Logs in an existing user by verifying credentials from the file.
+- Register and log in to a local account.
+- Add, view, filter, and delete expense records.
+- Review expenses by category and by date range.
+- View monthly and yearly summaries.
+- Create bar, line, pie, and histogram charts.
+- Store finance records in CSV files.
 
-2.Finance Management
- ----->manage_finance(username): Main menu for managing finance-related operations.
- ----->add_expense(finance_file): Adds a new expense to the user's finance file.
- ----->view_expenses(finance_file): Displays all expenses for the user.
- ----->delete_expense(finance_file): Deletes a specific expense based on user input.
- ----->view_expenses_by_category(finance_file): Groups and displays expenses by category.
- ----->filter_expenses_by_date(finance_file): Filters and displays expenses within a specified date range.
- ----->monthly_summary(finance_file): Shows a summary of expenses by month.
- ----->yearly_summary(finance_file): Shows a summary of expenses by year.
+## Built With
 
-3.Data Visualization
- ----->see_graphical_visualization(username): Allows the user to select the type of visualization.
- ----->plot_bar_chart(df): Displays a bar chart of expenses by category.
- ----->plot_line_chart(df): Shows expenses over time using a line chart.
- ----->plot_pie_chart(df): Creates a pie chart of expense distribution by category.
- ----->plot_histogram(df): Generates a histogram showing the distribution of expenses.
+Python, pandas, Matplotlib, pyfiglet, and termcolor.
 
-4.Account Management
- ----->update_password(credentials_file, username): Allows users to update their password.
- ----->manage_account(username): Main menu for account management tasks.
+## Run Locally
 
-5.Utility Functions
- ----->get_absolute_path(relative_path): Converts a relative file path to an absolute path.
- ----->get_finance_file_path(username): Constructs the path to the finance CSV file for a user.
- ----->view_existing_users(credentials_file): Displays all registered users.
-
-
-__Usage Instructions:-
-
-1.Register a New User:-
- ----->Select option 1 from the main menu.
- ----->Enter a unique username and password to register.
-
-2.Log in as an Existing User:-
- ----->Select option 2 from the main menu.
- ----->Enter your registered username and password.
-
-3.Manage Your Finances:-
- ----->After logging in, select "Manage Finance" to add, view, filter, and delete expenses.
-
-4.Visualize Your Data :-
- ----->Choose the "See visualize my expenses" option from the menu to generate visual representations of your expenses.
-
-5.Manage Your Account:-
- ----->Go to "Manage Account" to update your password.
-
-6.View Existing Users:-
- ----->Select "View Existing Users" from the main menu to see all registered users.
-
-7.Exit the Program:-
- ----->Select option 4 from the main menu to exit the program.
-
-__Dependencies:-
- ------>Make sure to install the required libraries before running the program:
-	pip install pandas matplotlib pyfiglet termcolor
-
-__Conclusion:-
- ------>QuantaFlow provides a robust and user-friendly solution for managing personal finances. With features like expense tracking, data visualization, and 	account management, it empowers users to monitor and understand their spending patterns effectively. By leveraging Python libraries such as pandas 	and matplotlib, QuantaFlow not only facilitates detailed financial analysis but also presents data in a visually engaging manner. This project serves 	as a practical learning tool for handling real-world data, making it an excellent choice for both personal use and educational purposes.
-
-__Disclaimer:-
- ------>This project is intended for educational use only. Please ensure that you keep your login credentials secure and handle your financial data 	responsibly.
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python3 -m pip install pandas matplotlib pyfiglet termcolor
+python3 "import os.py"
